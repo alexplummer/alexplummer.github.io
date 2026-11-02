@@ -8,7 +8,7 @@
   home page list. Safe to run again: it overwrites the app's pages and replaces its home entry.
 
 .EXAMPLE
-  .\scripts\new-app.ps1 -Slug interval-timer -Name 'Interval Timer Custom' `
+  .\scripts\new-app.ps1 -Slug interval-timer -Name 'Iron Interval' `
     -PrivacyMarkdown C:\Git\interval-timer\docs\privacy-policy.md `
     -Description (Get-Content C:\Git\interval-timer\app\src\main\play\listings\en-GB\short-description.txt -Raw) `
     -Icon C:\Git\interval-timer\app\src\main\play\listings\en-GB\graphics\icon\icon.png
