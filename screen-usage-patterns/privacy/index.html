@@ -39,6 +39,8 @@ anything shown on your screen. It does not read your location, contacts, phone n
 <li>The pattern insights it works out from that history (for example late-night use or quick check-ins), which
 are calculated on your phone</li>
 <li>Your settings, and whether Flickmap Pro is unlocked</li>
+<li>The ID Android gives the app on this phone (Android ID), only to notice when the app's data has been moved to a
+new phone, so it can start collecting afresh there and check Flickmap Pro with Google Play again</li>
 </ul>
 <p>A background task scheduled by Android collects new usage data from time to time, and again when you open the
 app. It reads from Android on your phone and writes to the app's own database; it does not send anything
@@ -46,7 +48,8 @@ anywhere.</p>
 <p>None of this is sent to the developer or to anyone else. Uninstalling the app or clearing its data deletes it.</p>
 <p><strong>Backups.</strong> Your usage history is left out of Android's cloud backup, so it is not copied to your Google
 account. Your settings may be included in your device backup to your own Google account if you have Android
-backup turned on, under Google's terms; the developer has no access to those backups.</p>
+backup turned on, under Google's terms. If you move to a new phone with a direct phone-to-phone transfer, Android
+may copy your usage history and settings across. The developer has no access to backups or transfers.</p>
 <h2 id="the-internet">The internet</h2>
 <p>Flickmap does not connect to the internet itself and has no server. The only exception is Google Play: to show
 the price of Flickmap Pro and to make or restore the purchase, the app talks to the Google Play Store app on your
@@ -69,7 +72,8 @@ data use described above. You grant it in Settings, and it can be turned off the
 <li><strong>Google Play billing</strong> (added by Google's Play Billing Library): to buy and restore Flickmap Pro.</li>
 </ul>
 <p>The app sees the list of apps that have a home-screen icon, so it can show their names and icons in your
-history. It does not ask for permission to see all installed apps.</p>
+history, and which apps are home-screen launchers, so time on your home screen isn't counted as an app. It does
+not ask for permission to see all installed apps.</p>
 <h2 id="children">Children</h2>
 <p>Flickmap is meant for adults and is not directed at children under 13. It does not knowingly collect
 information from anyone, of any age.</p>
